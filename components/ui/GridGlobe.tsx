@@ -3,7 +3,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./Globe").then((m) => m.World), {
-  ssr: true,
+  ssr: false,
 });
 
 export function GlobeDemo() {
