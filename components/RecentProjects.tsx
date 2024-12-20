@@ -16,11 +16,10 @@ const RecentProjects = () => {
             <PinContainer title={toShow} href={link}>
               <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
                 <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                  <img src='/bg.png' alt='bg-img'/>
+                  <img src='./bg.png'/>
                 </div>
                 <img
                   src={img}
-                  alt={title}
                   className='z-10 absolute bottom-0'
                 />
               </div>
@@ -36,7 +35,7 @@ const RecentProjects = () => {
                 <div className='flex items-center'>
                   {iconLists.map((icon, index) => (
                     <div key={icon} className='border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center' style={{ transform: `translateX(-${5 * index * 2}[px])`}}>
-                      <img src={icon} alt={icon} className='p-2'/>
+                      <img src={icon} className='p-2'/>
                     </div>
                   ))}
                 </div>
